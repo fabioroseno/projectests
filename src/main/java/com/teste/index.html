@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>GeoSales</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--CSSs-->
+<link rel="shortcut icon" href="res/imgs/icons/favicon.ico"
+	type="image/x-icon">
+<!-- Favicon -->
+<link rel="stylesheet" href="res/css/bootstrap.min.css">
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="res/css/font-awesome.min.css">
+<!-- Fonts  -->
+<link rel="stylesheet" href="res/css/simple-line-icons.css">
+<link rel="stylesheet" href="res/css/animate.css">
+<!-- CSS Animate -->
+<link rel="stylesheet" href="res/css/daterangepicker-bs3.css">
+<!-- Daterange Picker -->
+<link rel="stylesheet" href="res/css/clndr.css">
+<!-- Calendar demo -->
+<link rel="stylesheet" href="res/css/switchery.min.css">
+<!-- Switchery -->
+<link rel="stylesheet" href="res/css/main.css">
+<!-- Custom styles for this theme -->
+
+<!--Scripts-->
+<script type="text/javascript" src="geosales/geosales.nocache.js"></script>
+<script async="" src="res/js/analytics.js"></script>
+<!-- Feature detection -->
+<script src="res/js/modernizr-2.6.2.min.js"></script>
+<script src="res/js/jquery-1.11.1.min.js"></script>
+<!--Global JS-->
+<script src="res/js/bootstrap.min.js"></script>
+<script src="res/js/jquery.navgoco.min.js"></script>
+<script src="res/js/pace.min.js"></script>
+<script src="res/js/app.js"></script>
+<script src="res/js/jquery.countTo.js"></script>
+<!--Page Level JS-->
+<script src="res/js/skycons.js"></script>
+<!-- Weather  -->
+<script src="res/js/moment.min.js"></script>
+<script src="res/js/daterangepicker.js"></script>
+<script src="res/js/Chart.min.js"></script>
+<!-- ChartJS  -->
+<script src="res/js/morris.min.js"></script>
+<!-- Morris  -->
+<script src="res/js/raphael.2.1.0.min.js"></script>
+<script src="res/js/jquery-jvectormap-1.2.2.min.js"></script>
+<!-- Vector Map  -->
+<script src="res/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="res/js/gauge.min.js"></script>
+<!-- Gauge  -->
+<script src="res/js/gauge-demo.js"></script>
+<script src="res/js/clndr.js"></script>
+<!-- Calendar  -->
+<script src="res/js/clndr-demo.js"></script>
+<script src="res/js/underscore-min.js"></script>
+<script src="res/js/switchery.min.js"></script>
+<!-- Switch -->
+
+<!--Load these page level functions-->
+<script>
+	$(document).ready(function() {
+		app.dateRangePicker();
+		app.chartJs();
+		app.weather();
+		app.spinStart();
+		app.spinStop();
+	});
+</script>
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', 'arquivos/analytics.js', 'ga');
+
+	ga('create', 'UA-46627904-1', 'authenticgoods.co');
+	ga('send', 'pageview');
+</script>
+
+</head>
+
+<body class=" pace-done">
+
+
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+		<div class="panel">
+			<div class="panel-body">
+				<div class="calendar-block ">
+					<div class="cal1">
+						<div class="clndr">
+							<div class="clndr-controls">
+								<div class="clndr-control-button">
+									<span class="clndr-previous-button"><i
+										class="fa fa-angle-left"></i></span>
+								</div>
+								<div class="month">January 2015</div>
+								<div class="clndr-control-button">
+									<span class="clndr-next-button"><i
+										class="fa fa-angle-right"></i></span>
+								</div>
+							</div>
+							<table class="clndr-table" border="0" cellspacing="0"
+								cellpadding="0">
+								<thead>
+									<tr class="header-days">
+										<td class="header-day">S</td>
+										<td class="header-day">M</td>
+										<td class="header-day">T</td>
+										<td class="header-day">W</td>
+										<td class="header-day">T</td>
+										<td class="header-day">F</td>
+										<td class="header-day">S</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td
+											class="day past adjacent-month last-month calendar-day-2014-12-28 calendar-dow-0"><div
+												class="day-contents">28</div></td>
+										<td
+											class="day past adjacent-month last-month calendar-day-2014-12-29 calendar-dow-1"><div
+												class="day-contents">29</div></td>
+										<td
+											class="day past adjacent-month last-month calendar-day-2014-12-30 calendar-dow-2"><div
+												class="day-contents">30</div></td>
+										<td
+											class="day past adjacent-month last-month calendar-day-2014-12-31 calendar-dow-3"><div
+												class="day-contents">31</div></td>
+										<td class="day past calendar-day-2015-01-01 calendar-dow-4"><div
+												class="day-contents">1</div></td>
+										<td class="day past calendar-day-2015-01-02 calendar-dow-5"><div
+												class="day-contents">2</div></td>
+										<td class="day past calendar-day-2015-01-03 calendar-dow-6"><div
+												class="day-contents">3</div></td>
+									</tr>
+									<tr>
+										<td class="day past calendar-day-2015-01-04 calendar-dow-0"><div
+												class="day-contents">4</div></td>
+										<td class="day past calendar-day-2015-01-05 calendar-dow-1"><div
+												class="day-contents">5</div></td>
+										<td class="day past calendar-day-2015-01-06 calendar-dow-2"><div
+												class="day-contents">6</div></td>
+										<td class="day past calendar-day-2015-01-07 calendar-dow-3"><div
+												class="day-contents">7</div></td>
+										<td class="day past calendar-day-2015-01-08 calendar-dow-4"><div
+												class="day-contents">8</div></td>
+										<td class="day past calendar-day-2015-01-09 calendar-dow-5"><div
+												class="day-contents">9</div></td>
+										<td
+											class="day past event calendar-day-2015-01-10 calendar-dow-6"><div
+												class="day-contents">10</div></td>
+									</tr>
+									<tr>
+										<td
+											class="day past event calendar-day-2015-01-11 calendar-dow-0"><div
+												class="day-contents">11</div></td>
+										<td
+											class="day past event calendar-day-2015-01-12 calendar-dow-1"><div
+												class="day-contents">12</div></td>
+										<td
+											class="day past event calendar-day-2015-01-13 calendar-dow-2"><div
+												class="day-contents">13</div></td>
+										<td
+											class="day past event calendar-day-2015-01-14 calendar-dow-3"><div
+												class="day-contents">14</div></td>
+										<td class="day past calendar-day-2015-01-15 calendar-dow-4"><div
+												class="day-contents">15</div></td>
+										<td class="day past calendar-day-2015-01-16 calendar-dow-5"><div
+												class="day-contents">16</div></td>
+										<td class="day past calendar-day-2015-01-17 calendar-dow-6"><div
+												class="day-contents">17</div></td>
+									</tr>
+									<tr>
+										<td class="day past calendar-day-2015-01-18 calendar-dow-0"><div
+												class="day-contents">18</div></td>
+										<td class="day past calendar-day-2015-01-19 calendar-dow-1"><div
+												class="day-contents">19</div></td>
+										<td class="day past calendar-day-2015-01-20 calendar-dow-2"><div
+												class="day-contents">20</div></td>
+										<td
+											class="day past event calendar-day-2015-01-21 calendar-dow-3"><div
+												class="day-contents">21</div></td>
+										<td
+											class="day past event calendar-day-2015-01-22 calendar-dow-4"><div
+												class="day-contents">22</div></td>
+										<td
+											class="day past event calendar-day-2015-01-23 calendar-dow-5"><div
+												class="day-contents">23</div></td>
+										<td class="day past calendar-day-2015-01-24 calendar-dow-6"><div
+												class="day-contents">24</div></td>
+									</tr>
+									<tr>
+										<td class="day past calendar-day-2015-01-25 calendar-dow-0"><div
+												class="day-contents">25</div></td>
+										<td class="day today calendar-day-2015-01-26 calendar-dow-1"><div
+												class="day-contents">26</div></td>
+										<td class="day calendar-day-2015-01-27 calendar-dow-2"><div
+												class="day-contents">27</div></td>
+										<td class="day calendar-day-2015-01-28 calendar-dow-3"><div
+												class="day-contents">28</div></td>
+										<td class="day calendar-day-2015-01-29 calendar-dow-4"><div
+												class="day-contents">29</div></td>
+										<td class="day calendar-day-2015-01-30 calendar-dow-5"><div
+												class="day-contents">30</div></td>
+										<td class="day calendar-day-2015-01-31 calendar-dow-6"><div
+												class="day-contents">31</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</html>
